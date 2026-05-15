@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Website</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+body{
+font-family:Arial,sans-serif;
+background:#f8c8d0;
+overflow-x:hidden;
+color:#111;
+}
+.section{
+min-height:100vh;
+padding:60px 20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+background:#f8c8d0;
+border-top:15px scalloped white;
+}
+.top-border,.bottom-border{
+position:absolute;
+left:0;
+width:100%;
+height:22px;
+background:radial-gradient(circle at 10px -5px,#fff 18px,transparent 19px);
+background-size:40px 20px;
+z-index:2;
+}
+.top-border{top:0;}
+.bottom-border{
+bottom:0;
+transform:rotate(180deg);
+}
+.hearts-left{
+position:absolute;
+left:20px;
+bottom:40px;
+font-size:60px;
+opacity:0.5;
+}
+.hearts-right{
+position:absolute;
+right:30px;
+top:20px;
+font-size:45px;
+opacity:0.5;
+}
+.title-script{
+font-size:4rem;
+color:#d9365d;
+margin-bottom:20px;
+font-family:cursive;
+}
+.big-text{
+font-size:4rem;
+max-width:1000px;
+margin-bottom:30px;
+}
+.btn{
+padding:18px 50px;
+border:none;
+border-radius:999px;
+background:#e97b8e;
+color:white;
+font-size:2rem;
+cursor:pointer;
+transition:0.3s;
+margin:10px;
+}
+.btn:hover{
+transform:scale(1.05);
+}
+.gift{
+font-size:10rem;
+margin:20px 0;
+}
+.image-box{
+width:60%;
+max-width:700px;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+margin:30px 0;
+border:5px solid #e97b8e;
+}
+.image-box img{
+width:100%;
+display:block;
+}
+.paper{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+max-width:700px;
+text-align:left;
+line-height:1.8;
+font-size:1.2rem;
+}
+.final-wrap{
+display:flex;
+gap:40px;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+}
+.collage{
+width:350px;
+height:350px;
+background:#fff;
+clip-path:path("M175 320 C260 380 390 270 330 150 C290 70 210 70 175 130 C140 70 60 70 20 150 C-40 270 90 380 175 320 Z");
+overflow:hidden;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+gap:3px;
+padding:8px;
+}
+.collage img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+@media(max-width:768px){
+.big-text{
+font-size:2.2rem;
+}
+.title-script{
+font-size:2.8rem;
+}
+.btn{
+font-size:1.4rem;
+padding:15px 35px;
+}
+.gift{
+font-size:7rem;
+}
+.image-box{
+width:90%;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- SECTION 1 -->
+<section class="section">
+<div class="top-border"></div>
+<div class="bottom-border"></div>
+<div class="hearts-left">💗</div>
+<div class="hearts-right">💕</div>
+
+<h1 class="title-script">Hey Misbah</h1>
+<h2 class="big-text">I MADE SOMETHING SPECIAL FOR YOU...</h2>
+
+<div class="gift">🎁</div>
+
+<button class="btn" onclick="nextSection(1)">Click to open</button>
+</section>
+
+<!-- SECTION 2 -->
+<section class="section">
+<div class="top-border"></div>
+<div class="bottom-border"></div>
+<div class="hearts-left">💗</div>
+<div class="hearts-right">💕</div>
+
+<h2 class="big-text">ARE YOU READY FOR A LITTLE SURPRISE? 👀</h2>
+
+<div>
+<button class="btn" onclick="nextSection(2)">Yes ❤️</button>
+<button class="btn" onclick="nextSection(2)">Of Course 😍</button>
+</div>
+
+<button class="btn" onclick="nextSection(2)">No 😂</button>
+</section>
+
+<!-- SECTION 3 -->
+<section class="section">
+<div class="top-border"></div>
+<div class="bottom-border"></div>
+<div class="hearts-left">💗</div>
+<div class="hearts-right">💕</div>
+
+<h2 class="big-text">YOU KNOW WHAT I LOVE THE MOST?</h2>
+
+<button class="btn" onclick="nextSection(3)">Click to know</button>
+</section>
+
+<!-- SECTION 4 -->
+<section class="section">
+<div class="top-border"></div>
+<div class="bottom-border"></div>
+<div class="hearts-left">💗</div>
+<div class="hearts-right">💕</div>
+
+<h2 class="big-text">YOUR SMILE 😊</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Surprise</title>
+</head>
+
+<body style="text-align:center; font-family:Arial; background-color:#fff0f5;">
+
+  <h1 style="color:deeppink;">🎉 Happy Birthday 🎉</h1>
+
+  <img src="https://files.catbox.moe/t62wvt.jpeg"
+       alt="birthday image"
+       style="width:80%; max-width:400px; border-radius:15px; display:block; margin:auto;">
+
+  <p style="font-size:18px; color:#333;">
+    Wishing you happiness, love, and success ❤️
+  </p>
+
+</body>
+</html>
+
+</body>
+</html>
+
+<button class="btn" onclick="nextSection(4)">Next</button>
+</section>
+
+<!-- SECTION 5 -->
+<section class="section">
+<div class="top-border"></div>
+<div class="bottom-border"></div>
+<div class="hearts-left">💗</div>
+<div class="hearts-right">💕</div>
+
+<h1 class="title-script">WAIT...</h1>
+
+<h2 class="big-text">ISN'T TODAY SOMEONE VERY SPECIAL'S BIRTHDAY? 🎂</h2>
+
+<button class="btn" onclick="nextSection(5)">Who? 👀</button>
+</section>
+
+<!-- SECTION 6 -->
+<section class="section">
+<div class="top-border"></div>
+<div class="bottom-border"></div>
+<div class="hearts-left">💗</div>
+<div class="hearts-right">💕</div>
+
+<h2 class="big-text">YOU 🤍</h2>
+
+<div class="final-wrap">
+
+<div class="paper">
+<h3>Happy Birthday, My Love ❤️🎂</h3>
+<br>
+<p>
+
+Happy Birthday My Love ❤️
+
+I’m really grateful to have you in my life. Even if we are far away, you always stay close to my heart. May Allah bless you with happiness, success, good health, and endless smiles. May He protect you from every sadness and make all your dreams come true. Ameen.
+
+Enjoy your special day princess 🤍✨
+
+Once again, Happy Birthday Beautiful ✨🎉
+
+</p>
+</div>
+
+<div class="collage">
+<img src="https://i.ibb.co/XxXX5LPW/IMG-1520.jpg">
+<img src="https://i.ibb.co/4v44PjJ/IMG-1521.jpg">
+<img src="https://i.ibb.co/KxJCRj7q/IMG-1522.jpg">
+<img src="https://i.ibb.co/LdgSFnLD/IMG-1523.jpg"> 
+<img src="https://i.ibb.co/s7p3hq0/IMG-1524.jpg">
+<img src="https://i.ibb.co/r209hpfZ/IMG-1525.jpg">
+	<img src="https://i.ibb.co/pgf9wHd/IMG-1526.jpg">
+</div>
+
+</div>
+
+</section>
+
+<script>
+function nextSection(current){
+const sections=document.querySelectorAll('.section');
+sections[current].scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
